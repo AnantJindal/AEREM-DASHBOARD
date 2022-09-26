@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEREM</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="assests/styles/style.css">
+</head>
+
+<body>
+    <!-- Navbar Part -->
+    <header>
+        <div class="container">
+            <img src="assests/images/Logo.svg" alt="Logo">
+            <div class="help">
+                <img src="assests/images/Help.svg" alt="helpLogo">
+                <h4>Help</h4>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main Part -->
+    <div class="mainPart">
+        <div class="container">
+
+
+            <!-- SideBar Part -->
+
+            <aside>
+                <div class="insideContainer">
+
+                    <div class="headings">
+                        <h1> Generate <br /><span>
+                                Solar project proposal</span> </h1>
+                    </div>
+
+                    <div class="proposalButtons">
+
+                        <div class="proposalbutton success">
+                            <div class="completed">
+                                <label><img src="assests/images/completed.svg" alt="Right"></label>
+                            </div>
+                            <div class="uncomplete">
+                                <label>1</label>
+                            </div>
+                            <div class="types">
+                                <h4>Project Details</h4>
+                                <p>Details about your project</p>
+                            </div>
+                            <img src="assests/images/arrow.svg" alt="Arrow" id="arrow">
+                        </div>
+
+                        <div class="proposalbutton success">
+                            <div class="completed">
+                                <label><img src="assests/images/completed.svg" alt="Right"></label>
+                            </div>
+                            <div class="uncomplete">
+                                <label>2</label>
+                            </div>
+                            <div class="types">
+                                <h4>Design Parameters</h4>
+                                <p>Details about your project</p>
+                            </div>
+                            <img src="assests/images/arrow.svg" alt="Arrow" id="arrow">
+                        </div>
+
+                        <div class="proposalbutton active">
+                            <div class="completed">
+                                <label><img src="assests/images/completed.svg" alt="Right"></label>
+                            </div>
+                            <div class="uncomplete">
+                                <label>3</label>
+                            </div>
+                            <div class="types">
+                                <h4>Project Financials</h4>
+                                <p>Details about your project</p>
+                            </div>
+                            <img src="assests/images/arrow.svg" alt="Arrow" id="arrow">
+                        </div>
+
+
+                    </div>
+                </div>
+                <img src="./assests/images/shutterstock_645959218-removebg 1.svg" id="bottomImage">
+
+            </aside>
+
+            <!-- Financials Part -->
+            <div class="Financials">
+
+                <ul id="Headings">
+                    <li>
+                        <img src="assests/images/wallet.svg" alt="Wallet">
+                        <span>Project Financials</span>
+                    </li>
+                    <li id="progressBar" style="width: 280px;" >
+                        <div class="progress" style="height: 10px;">
+                            <div class="bar">
+
+                            </div>
+                        </div>
+                        <label>10%</label>
+                    </li>
+                </ul>
+
+                <div class="content">
+                    <ul>
+                        <li>
+                            <label>Asset Cost</label>
+                            <div class="input">
+                                <input type="text" placeholder="0">
+                                <span>/WP</span>
+                            </div>
+
+
+                        </li>
+                        <li>
+                            <label>Payment Schedule</label>
+                            <div class="input">
+                                <select placeholder="Select Payment Schedule">
+                                    <option value="">Select Payment Schedule</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label>Equity</label>
+                            <div class="input">
+                                <input type="text" placeholder="25">
+                                <span>%</span>
+                            </div>
+                        </li>
+                        <li>
+                            <label>Debt</label>
+                            <div class="input">
+                                <input type="text" placeholder="75">
+                                <span>%</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label>Duration of loan</label>
+                            <div class="input">
+                                <input type="text" placeholder="5">
+                                <span>Years</span>
+                            </div>
+                        </li>
+                        <li>
+                            <label>Rate of Interes</label>
+                            <div class="input">
+                                <input type="text" placeholder="15">
+                                <span>%</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label>Tariff Escalation</label>
+                            <div class="input">
+                                <input type="text" placeholder="3">
+                                <span>%</span>
+                            </div>
+                        </li>
+                        <li>
+                            <label>Annual Degradatio</label>
+                            <div class="input">
+                                <input type="text" placeholder="0.70">
+                                <span>%</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="note">
+                    <p>Note: The above values are hard coded and can only change if the installers want to change it</p>
+                </div>
+
+                <div class="Financialsbuttons">
+                    <button class="btn btn-pre"><img src="assests/images/pre.svg" alt="Previous">Previous </button>
+                    <button class="btn btn-sub">Submit <img src="assests/images/sub.svg" alt="Submit"></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

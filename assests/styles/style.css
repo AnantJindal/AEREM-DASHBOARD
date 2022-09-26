@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  max-width: 1140px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header {
+  background: #FFFFFF;
+  border-bottom: 1px solid #E6E6E6;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+header .container {
+  justify-content: space-between;
+}
+header .container .help {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 3%;
+  cursor: pointer;
+}
+header .container .help h4 {
+  padding-left: 3px;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #464F60;
+}
+
+.mainPart {
+  display: flex;
+}
+.mainPart .container {
+  padding: 0;
+  margin-top: 3%;
+}
+.mainPart .container aside {
+  background: radial-gradient(71.33% 37.8% at 85.13% 100%, #F08D33 8.47%, #F9CE8F 42.34%, #FEF9F0 100%);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: fixed;
+}
+.mainPart .container aside #bottomImage {
+  position: absolute;
+  bottom: 0;
+  right: 2px;
+}
+.mainPart .container aside .insideContainer {
+  padding: 20px;
+  height: 100vh;
+}
+.mainPart .container aside .insideContainer .headings h1 {
+  padding-top: 40px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33.6px;
+  color: #444C66;
+}
+.mainPart .container aside .insideContainer .headings h1 span {
+  color: #F39B2D;
+}
+.mainPart .container aside .insideContainer .proposalButtons .proposalbutton {
+  display: flex;
+  margin-top: 40px;
+}
+.mainPart .container aside .insideContainer .proposalButtons .proposalbutton #arrow {
+  display: none;
+}
+.mainPart .container aside .insideContainer .proposalButtons .proposalbutton #arrow label .tick {
+  display: block;
+}
+.mainPart .container aside .insideContainer .proposalButtons .proposalbutton .types {
+  padding-left: 20px;
+}
+.mainPart .container aside .insideContainer .proposalButtons .proposalbutton .types h4 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #10202F;
+  opacity: 0.9;
+}
+.mainPart .container aside .insideContainer .proposalButtons .proposalbutton .types p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #10202F;
+  opacity: 0.6;
+}
+.mainPart .container aside .insideContainer .proposalButtons .proposalbutton #arrow {
+  padding-left: 40px;
+}
+.mainPart .container aside .insideContainer .proposalButtons .proposalbutton .completed {
+  display: none;
+  background-color: #F9C985;
+  border-radius: 88px;
+  width: 32px;
+  height: 32px;
+  margin-top: 2%;
+}
+.mainPart .container aside .insideContainer .proposalButtons .proposalbutton .completed label {
+  display: flex;
+  justify-content: center;
+  margin-top: 31%;
+}
+.mainPart .container aside .insideContainer .proposalButtons .proposalbutton .uncomplete {
+  background-color: #64BAAA;
+  border-radius: 88px;
+  width: 32px;
+  height: 32px;
+  margin-top: 2%;
+}
+.mainPart .container aside .insideContainer .proposalButtons .proposalbutton .uncomplete label {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin-top: 31%;
+}
+.mainPart .container aside .insideContainer .proposalButtons .active {
+  background: linear-gradient(270deg, #FFE9CC 11.01%, rgba(255, 244, 230, 0) 140.49%);
+  border-radius: 8px;
+  padding: 5px;
+  padding-left: 0px;
+}
+.mainPart .container aside .insideContainer .proposalButtons .active #arrow {
+  display: block;
+}
+.mainPart .container aside .insideContainer .proposalButtons .success .uncomplete {
+  display: none;
+}
+.mainPart .container aside .insideContainer .proposalButtons .success .completed {
+  display: block;
+}
+.mainPart .container aside .insideContainer .proposalButtons .pending .uncomplete {
+  display: block;
+}
+.mainPart .container .Financials {
+  padding: 40px;
+  margin-left: 30%;
+}
+.mainPart .container .Financials #Headings {
+  list-style-type: none;
+  display: flex;
+  gap: 110px;
+}
+.mainPart .container .Financials #Headings #progressBar {
+  margin-top: 31px;
+}
+.mainPart .container .Financials #Headings li:first-child {
+  display: inherit;
+  margin-top: 20px;
+}
+.mainPart .container .Financials #Headings li:first-child img {
+  height: 40px;
+  margin-top: 8px;
+}
+.mainPart .container .Financials #Headings li:first-child span {
+  padding: 10px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 140%;
+  color: #10202F;
+}
+.mainPart .container .Financials #Headings li:last-child {
+  margin-top: 15px;
+}
+.mainPart .container .Financials #Headings li {
+  display: flex;
+}
+.mainPart .container .Financials #Headings li label {
+  align-self: center;
+  margin-left: 5px;
+}
+.mainPart .container .Financials #Headings li .progress {
+  margin: 20px auto;
+  padding: 0;
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+  background: #e5e5e5;
+  border-radius: 50px;
+}
+.mainPart .container .Financials #Headings li .progress .bar {
+  position: relative;
+  float: left;
+  min-width: 10%;
+  height: 100%;
+  background: #64BAAA;
+}
+.mainPart .container .Financials .content ul {
+  gap: 40px;
+}
+.mainPart .container .Financials .content ul li {
+  padding-top: 32px;
+}
+.mainPart .container .Financials .content ul li label {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #1C3954;
+}
+.mainPart .container .Financials .content ul li .input {
+  width: 315px;
+  background: #FFFFFF;
+  border: 1px solid #DCDFE5;
+  border-radius: 4px;
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #A1A9B8;
+  position: relative;
+}
+.mainPart .container .Financials .content ul li .input input {
+  border: 1px;
+  width: 310px;
+  padding: 12px;
+  padding-right: 0px;
+  cursor: pointer;
+  outline: none;
+}
+.mainPart .container .Financials .content ul li .input select {
+  border: 1px;
+  background-color: #ffffff;
+  padding: 12px;
+  width: 315px;
+  border: 1px solid #DCDFE5;
+  color: #A1A9B8;
+  cursor: pointer;
+  border: 1px solid transparent;
+  margin-right: 10px;
+  outline: none;
+}
+.mainPart .container .Financials .content ul li .input select option {
+  color: #A1A9B8;
+}
+.mainPart .container .Financials .content ul li .input select option img {
+  align-self: center;
+}
+.mainPart .container .Financials .content ul li .input span {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  margin-left: 30px;
+}
+.mainPart .container .Financials .note {
+  background: #FEF5F7;
+  border: 1px solid #FEF5F7;
+  border-radius: 4px;
+  margin-top: 16px;
+  padding: 8px 0px 8px 12px;
+  max-width: 662px;
+}
+.mainPart .container .Financials .note p {
+  font-weight: 600;
+  font-size: 13.5px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #F17490;
+}
+.mainPart .container .Financials .Financialsbuttons {
+  display: flex;
+  gap: 405px;
+  margin-top: 48px;
+  padding-bottom: 184px;
+}
+.mainPart .container .Financials .Financialsbuttons .btn {
+  display: flex;
+  padding: 14px 32px 14px 24px;
+  gap: 4px;
+  width: 137px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  border: 1px solid #F39B2D;
+  line-height: 20px;
+}
+.mainPart .container .Financials .Financialsbuttons .btn-pre {
+  color: #F39B2D;
+  background-color: #fff;
+}
+.mainPart .container .Financials .Financialsbuttons .btn-pre img {
+  padding-right: 9px;
+}
+.mainPart .container .Financials .Financialsbuttons .btn-sub {
+  background: linear-gradient(90deg, #EB5F13 0%, #F98A36 100%);
+  color: #fff;
+}
+.mainPart .container .Financials .Financialsbuttons .btn-sub img {
+  padding-left: 9px;
+}
+
+@media all and (max-width: 992px) {
+  aside {
+    display: none;
+  }
+  .mainPart .container .Financials {
+    margin-left: 0%;
+    margin-top: 3%;
+  }
+}/*# sourceMappingURL=style.css.map */
